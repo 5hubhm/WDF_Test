@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table Toggle</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Crunchyroll Subscription Pricing Table</h1>
+
+    <!-- Toggle Slider -->
+    <div class="toggle-container">
+        <label class="toggle-label">
+            <span>Monthly</span>
+            <input type="checkbox" id="toggleSwitch">
+            <span class="slider"></span>
+            <span>Yearly</span>
+        </label>
+    </div>
+
+    <div class="container">
+        <div class="pricing-table">
+            <div class="plan">
+                <h2>Basic</h2>
+                <div class="price" data-monthly="$10" data-yearly="$100">$10</div>
+                <ul class="features">
+                    <li>No ads</li>
+                    <li>High Quality Videos</li>
+                    <li>2 Device access</li>
+                </ul>
+            </div>
+            <div class="plan recommended">
+                <h2>Pro</h2>
+                <div class="price" data-monthly="$20" data-yearly="$200">$20</div>
+                <ul class="features">
+                    <li>No ads</li>
+                    <li>HD, 2K quality Videos</li>
+                    <li>3 Device access</li>
+                    <li>5 GB cloud Storage</li>
+                </ul>
+            </div>
+            <div class="plan">
+                <h2>Enterprise</h2>
+                <div class="price" data-monthly="$50" data-yearly="$500">$50</div>
+                <ul class="features">
+                    <li>No ads</li>
+                    <li>HD, 2K, 4K quality Videos</li>
+                    <li>5 Device access</li>
+                    <li>50 GB cloud Storage</li>
+                    <li>Unlimited Downloads</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

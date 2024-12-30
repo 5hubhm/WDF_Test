@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+h1{
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    align-content: center;
+}
+
+.pricing-table {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.plan {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.plan.recommended {
+    border: 2px solid #007bff;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+.plan h2 {
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 2rem;
+    margin: 20px 0;
+    transition: opacity 0.3s;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.features li {
+    margin: 10px 0;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.toggle-label input {
+    display: none;
+}
+
+.slider {
+    margin: 0 10px;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+input:checked + .slider {
+    background: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(25px);
+}
